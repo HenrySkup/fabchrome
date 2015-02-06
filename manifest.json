@@ -1,0 +1,19 @@
+{
+  "name": "Fab Modules",
+  "short_name": "Fab Modules",
+  "version": "0.1",
+  "description": "A port of the Fab Modules (from MIT) to a Chrome App.",
+  "icons": {
+    "16": "icon_16.png",
+    "128": "icon_128.png"
+    },
+  "author": "Henry Skupniewicz, based on the Fab Modules writen by Neil Gershenfeld.",
+  "minimum_chrome_version": "28",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": []
+}
