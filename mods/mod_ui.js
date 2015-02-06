@@ -2,13 +2,13 @@
 // mod_ui.js
 //   fab module UI routines
 //
-// Neil Gershenfeld 
+// Neil Gershenfeld
 // (c) Massachusetts Institute of Technology 2014
-// 
-// This work may be reproduced, modified, distributed, performed, and 
-// displayed for any purpose, but must acknowledge the fab modules 
-// project. Copyright is retained and must be preserved. The work is 
-// provided as is; no warranty is provided, and users accept all 
+//
+// This work may be reproduced, modified, distributed, performed, and
+// displayed for any purpose, but must acknowledge the fab modules
+// project. Copyright is retained and must be preserved. The work is
+// provided as is; no warranty is provided, and users accept all
 // liability.
 //
 // todo
@@ -141,13 +141,13 @@ define(['mods/mod_globals', 'mods/mod_file'], function(globals, mod_file) {
          return el[0]
       }).indexOf("module")
       var module = arr[index][1]
-       
+
       var fn_name = "mod_"
       for (var i = 0; i < modname.length; ++i)
          fn_name += modname.charCodeAt(i)
          // var fn_str = controls + "(\"" + routine + "\");"
       var fn_str = " require(['processes/mod_path'], function(mod_path){"
-         
+
       fn_str += "mod_path.controls." + controls + "(\"" + routine + "\",\"" + module + "\");"
       for (var i = 0; i < arr.length; ++i) {
          fn_str += "var element = findEl(\"mod_" + arr[i][0] + "\");"
